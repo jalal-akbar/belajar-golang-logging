@@ -1,14 +1,35 @@
 # belajar-golang-logging
+
+## Contents
+- [Contents](#Contents)
+- [Pengenalan Logging](#Pengenalan-Logging)
+    - [Diagram Logging](#diagram-logging)
+    - [Ekosistem Logging](#ekosistem-logging)
+- [Logging Library](#logging-library)
+- [Logger](#logger)
+- [Level](#level)
+- [Output](#output)
+- [Formatter](#formatter)
+- [Field](#field)
+- [Entry](#entry)
+- [Hook](#hook)
+- [Singleton](#singleton)
+
+
+# Pengenalan-Logging
 - Log file adalah file yang berisikan informasi kejadian dari sebuah sistem
 - Biasanya dalam log file, terdapat informasi waktu kejadian dan pesan kejadian
 - Logging adalah aksi menambah informasi log ke log file
 - Logging sudah menjadi standar industri untuk menampilkan informasi yang terjadi di aplikasi yang kita buat
 - Logging bukan hanya untuk menampilkan informasi, kadang digunakan untuk proses debugging ketika terjadi masalah di aplikasi kita
 
-# Ekosistem Logging
-- Aplikasi->Log file->Log Aggregator (fluentd,filebit) ->Log Database(Elasticsearch)->Log Management (Kibana, Graylog)
+# Diagram-Logging
+- Aplikasi-> Mengirim Log Event ->Log file
 
-# Logging Library
+# Ekosistem-Logging
+- Aplikasi-> Log file -> Log Aggregator (fluentd,filebit) -> Log Database(Elasticsearch) -> Log Management (Kibana, Graylog)
+
+# Logging-Library
 - Menggunakan Go-Lang sebenarnya kita bisa package log untuk melakukan logging
 - Hanya saja karena fiturnya terbatas, oleh karena itu kebanyakan programmer tidak menggunakanny
 
