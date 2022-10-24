@@ -1,5 +1,5 @@
 # belajar-golang-logging
-# Ekosistem Loggin
+# Ekosistem Logging
 Aplikasi->Log file->Log Aggregator (fluentd,filebit) ->Log Database(Elasticsearch)->Log Management (Kibana, Graylog)
 
 # Logging Library
@@ -29,3 +29,8 @@ Zerolog : https://github.com/rs/zerolog
 ```go
 https://github.com/sirupsen/logrus/blob/master/entry.go
 ```
+# Singleton
+Logrus sendiri memiliki singleton object untuk Logger, sehingga kita tidak perlu membuat object Logger sendiri sebenarnya
+Namun artinya, jika kita ubah data Logger singleton tersebut, maka secara otomatis yang menggunakan Logger tersebut akan berubah
+Secara default, Logger singleton yang ada di logrus menggunakan TextFormatter dan Info Level
+Cara menggunakan Logger singleton ini, kita bisa langsung menggunakan package logrus nya saja
