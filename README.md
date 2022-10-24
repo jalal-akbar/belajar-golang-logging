@@ -36,13 +36,13 @@ https://github.com/rs/zerolog
 - Level itu dimulai dari level terendah sampai level tertinggi
 - Logrus mendukung banyak sekali level
 
-1.Trace
-2.Debug
-3.Info
-4.Warn
-5.Error
-6.Fatal
-7.Panic
+- (1).Trace
+- (2).Debug
+- (3).Info
+- (4).Warn
+- (5).Error
+- (6).Fatal
+- (7).Panic
 
 #  Output
 - Secara default, output tujuan log yang kita kirim via Logrus adalah ke Console
@@ -87,7 +87,7 @@ https://github.com/sirupsen/logrus/blob/master/entry.go
 
 
 # Singleton
-Logrus sendiri memiliki singleton object untuk Logger, sehingga kita tidak perlu membuat object Logger sendiri sebenarnya
-Namun artinya, jika kita ubah data Logger singleton tersebut, maka secara otomatis yang menggunakan Logger tersebut akan berubah
-Secara default, Logger singleton yang ada di logrus menggunakan TextFormatter dan Info Level
-Cara menggunakan Logger singleton ini, kita bisa langsung menggunakan package logrus nya saja
+- Logrus sendiri memiliki singleton object untuk Logger, sehingga kita tidak perlu membuat object Logger sendiri sebenarnya
+- Namun artinya, jika kita ubah data Logger singleton tersebut, maka secara otomatis yang menggunakan Logger tersebut akan berubah
+- Secara default, Logger singleton yang ada di logrus menggunakan TextFormatter dan Info Level
+- Cara menggunakan Logger singleton ini, kita bisa langsung menggunakan package logrus nya saja
